@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>مدير المصاريف الاحترافي</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="manifest" href="manifest.json">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+
+<!-- 👤 تسجيل الدخول -->
+<div id="loginBox" class="card">
+
+<h3>👤 تسجيل الدخول</h3>
+
+<input id="username" placeholder="اكتب اسمك">
+<button onclick="login()">دخول</button>
+
+</div>
+
+<!-- التطبيق -->
+<div id="app" style="display:none;" class="container">
+
+<h2> مدير المصاريف</h2>
+
+<button onclick="toggleDark()"> وضع ليلي</button>
+<button onclick="changeTheme()"> تغيير اللون</button>
+<button onclick="clearAll()"> حذف الكل</button>
+
+<br><br>
+
+<input id="desc" placeholder="اكتب ماذا اشتريت ">
+<input id="amount" type="number" placeholder="اكتب المبلغ اللي دفعته">
+<input type="date" id="date">
+
+<select onchange="changeTheme(this.value)">
+    <option value="beige">🤎 بيج</option>
+    <option value="pink">💖 بينك</option>
+    <option value="blue">🔵 أزرق</option>
+    <option value="green">💚 أخضر</option>
+    <option value="dark">⚫ أسود</option>
+</select>
+
+<select id="category">
+    <option>مواصلات</option>
+    <option>تسوق</option>
+    <option>الوجبات</option>
+    <option>أخرى</option>
+</select>
+
+<input id="budget" type="number" placeholder="حدد ميزانيتك ">
+<button onclick="setBudget()">حفظ الميزانية</button>
+
+<br><br>
+
+<button onclick="addExpense()"> اضافة</button>
+
+<br><br>
+
+<button onclick="downloadCSV()"> تحميل التقرير</button>
+
+<h3>الإجمالي: <span id="total">0</span></h3>
+<h3 id="warning"></h3>
+<h3 id="analysis"></h3>
+
+<canvas id="chart" width="300" height="200"></canvas>
+
+<ul id="list"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<select onchange="changeTheme(this.value)">
+    <option value="beige">🤎 بيج</option>
+    <option value="pink">💖 بينك</option>
+    <option value="blue">🔵 أزرق</option>
+    <option value="green">💚 أخضر</option>
+    <option value="dark">⚫ أسود</option>
+</select>

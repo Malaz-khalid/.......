@@ -1,0 +1,193 @@
+body {
+    font-family: Arial;
+    background: #ffffff; /* أبيض */
+    margin: 0;
+    text-align: center;
+    color: #5a3a45;
+}
+
+/* container */
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* login card */
+.card {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff5f8; /* بيبي بينك فاتح */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* inputs */
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #f3c6d3;
+    background: #ffffff;
+}
+
+/* buttons */
+button {
+    width: 95%;
+    padding: 10px;
+    margin: 5px;
+    background: #f48fb1; /* بيبي بينك */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ec6f9a;
+}
+
+/* list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #f8d7e3;
+}
+
+/* warnings */
+#warning {
+    color: #d81b60;
+    font-weight: bold;
+}
+
+#analysis {
+    color: #ad1457;
+    font-weight: bold;
+}
+
+/* dark mode (اختياري) */
+.dark {
+    background: #2b2118;
+    color: #f5f0e6;
+}
+
+.dark .container,
+.dark .card {
+    background: #3b2d21;
+    color: #f5f0e6;
+}
+
+.dark li {
+    background: #4a3829;
+}
+
+/* mobile */
+@media (max-width:600px){
+    input, button, select {
+        width: 100%;
+    }
+}
+/* 🤎 Beige */
+body.beige {
+    background: #f5f0e6;
+    color: #4b3b2a;
+}
+
+/* 💖 Pink */
+body.pink {
+    background: #fff0f5;
+    color: #5a2d3a;
+}
+
+/* 🔵 Blue */
+body.blue {
+    background: #eef4ff;
+    color: #1e2a44;
+}
+
+/* 💚 Green */
+body.green {
+    background: #eef7f1;
+    color: #1f3b2c;
+}
+
+/* ⚫ Dark */
+body.dark {
+    background: #1e1e1e;
+    color: #f5f5f5;
+}
+
+/* Cards */
+body.pink .card,
+body.blue .card,
+body.green .card,
+body.beige .card {
+    background: #ffffff;
+}
+
+body.dark .card {
+    background: #2c2c2c;
+}
+
+/* Buttons لكل الثيمات */
+body.pink button { background: #f48fb1; }
+body.blue button { background: #2563eb; }
+body.green button { background: #2e7d32; }
+body.beige button { background: #8b5e3c; }
+body.dark button { background: #444; }
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .card {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    input, select, button {
+        width: 100% !important;
+        font-size: 16px;
+        margin: 6px 0;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    canvas {
+        width: 100% !important;
+        height: auto;
+    }
+}
